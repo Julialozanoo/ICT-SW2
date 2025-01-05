@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Robotics Form</title>
+	 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+	<section class="form-section">
+    <div class="container">
+      <h2 class="text-center mb-4">Robotics Club Registration Form</h2>
+      <div class="form-box">
+        <form action="/submit-form" method="POST" enctype="multipart/form-data">
+          <div class="form-row">
+            
+            <div class="form-group col-md-6">
+              <label for="name">Full Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="email">Email Address</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="age">Age</label>
+              <input type="number" class="form-control" id="age" name="age" placeholder="Enter your age" required>
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="phone">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="experience">Robotics Experience</label>
+            <textarea class="form-control" id="experience" name="experience" rows="4" placeholder="Describe your robotics experience" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="area">Which area of robotics interests you the most?</label><br>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="area" id="electronics" value="Electronics" required>
+              <label class="form-check-label" for="electronics">Electronics</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="area" id="programming" value="Programming" required>
+              <label class="form-check-label" for="programming">Programming</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="area" id="mechanical-design" value="Mechanical Design" required>
+              <label class="form-check-label" for="mechanical-design">Mechanical Design</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="level">What is your experience level in robotics?</label><br>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="level" id="beginner" value="Beginner" required>
+              <label class="form-check-label" for="beginner">Beginner</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="level" id="good" value="Good" required>
+              <label class="form-check-label" for="good">Good</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="level" id="advanced" value="Advanced" required>
+              <label class="form-check-label" for="advanced">Advanced</label>
+            </div>
+          </div>
+          
+          	 <div class="form-group">
+              <label for="interest">Statement of Interest</label>
+            <textarea class="form-control" rows="4" placeholder="Write a brief statement of interest for joining the Robotics Club" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-success">Submit Application</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section> 
+</body>
+</html>
